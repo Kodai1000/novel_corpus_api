@@ -60,6 +60,10 @@ def search_word_in_co_occurrence(db, identifier, keyword):
                     co_occurrence.head_word.contains(katakana),
                     co_occurrence.target_word.contains(keyword),
                     co_occurrence.target_reading.contains(katakana),
+                    keyword.contains(co_occurrence.head_word),
+                    katakana.contains(co_occurrence.head_word),
+                    keyword.contains(co_occurrence.target_word),
+                    katakana.contains(co_occurrence.target_reading),
                 ),
             )
         )
