@@ -9,5 +9,5 @@
 1. /co_occurrence/夏目漱石/all/<searched_word>/<minimum_count>
     単語<searched_word>と共起する語で、設定された最小共起回数<minimm_count>以上のものを返す。
     ※allの部分には、今後係り受けの関係を入力できるようにする予定です。
-2. /get_relative_words/夏目漱石/<keyword>
-    データベースに登録されている単語のうち、文字列<keyword>と一部一致する単語を返す。
+2. /get_relative_words/夏目漱石/<searched_keyword>
+    データベースに登録されている単語のうち、文字列<searched_keyword>と一部一致する単語を返す。
